@@ -39,7 +39,7 @@ html, body, app-root {
   height: 20px;
   background: rgba(255, 255, 255, 0.2);
   animation: animate 25s linear infinite;
-  bottom: -150px;
+  bottom: 0;
 }
 
 /* Estilos individuales para cada círculo */
@@ -56,7 +56,7 @@ html, body, app-root {
 
 @keyframes animate {
   0% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(150px) rotate(0deg);
     opacity: 1;
     border-radius: 0;
   }
