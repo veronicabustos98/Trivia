@@ -18,11 +18,12 @@
       {{ currentQuestion.question }}
     </h4>
 
-   <img 
-    *ngIf="currentQuestion.image" 
-    [src]="currentQuestion.image" 
-    alt="Pregunta" 
-    class="w-full max-h-64 sm:max-h-72 md:max-h-80 object-contain rounded-xl mb-6 shadow-md" />
+ <img 
+  *ngIf="currentQuestion.image" 
+  [src]="currentQuestion.image" 
+  alt="Pregunta" 
+  class="max-w-xs sm:max-w-sm md:max-w-md max-h-64 object-contain mx-auto rounded-xl mb-3 shadow-md" />
+
 
     <div class="grid gap-4">
       <button
