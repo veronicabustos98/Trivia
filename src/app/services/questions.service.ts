@@ -39,7 +39,7 @@ export class QuestionsService {
     {
       question: 'El tubo venturi que mide una masa de fluido constante demuestra basandose en el principio de bernoulli y conservación de la masa que',
       image: 'assets/images/Tubo venturi.jpeg',
-      options: ['Disminuye la seccion y disminuye el caudal', 'Disminuye la seccion entonces aumenta la energía cinética y baja da energía de presión', 'Disminuye la sección entonces disminuye la energía cinética y aumenta la energía de presión'],
+      options: ['Disminuye la seccion entonces aumenta la energía cinética y baja da energía de presión','Disminuye la seccion y disminuye el caudal', 'Disminuye la sección entonces disminuye la energía cinética y aumenta la energía de presión'],
       correctAnswer: 'Disminuye la seccion entonces aumenta la energía cinética y baja da energía de presión'
     },
     {
@@ -49,12 +49,12 @@ export class QuestionsService {
     },
     {
       question: 'El número de Reynolds en hidráulica se utiliza para:',
-      options: ['Determinar la velocidad crítica del canal', 'Identificar el régimen de flujo', 'Medir la presión del fluido'],
+      options: ['Identificar el régimen de flujo', 'Determinar la velocidad crítica del canal', 'Medir la presión del fluido'],
       correctAnswer: 'Identificar el régimen de flujo'
     },
     {
       question: 'El flujo crítico en un canal abierto se produce cuando:',
-      options: ['El número de Froude es mayor que 1', 'El número de Froude es igual a 1', 'El número de Reynolds es menor que 2000','El caudal es constante y la pendiente es cero'],
+      options: ['El número de Froude es mayor que 1',  'El número de Reynolds es menor que 2000','El caudal es constante y la pendiente es cero','El número de Froude es igual a 1'],
       correctAnswer: 'El número de Froude es igual a 1'
     }
   ];
