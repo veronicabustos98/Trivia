@@ -13,6 +13,7 @@ export class TriviaComponent {
   currentQuestion!: Question;
   selectedAnswer: string | null = null;
   quizFinished: boolean = false;
+  score: number = 0;
 
   constructor(private questionService: QuestionsService) {}
 
@@ -28,7 +29,9 @@ export class TriviaComponent {
 
   selectAnswer(option: string) {
     this.selectedAnswer = option;
-
+    if (option === this.currentQuestion.correctAnswer) {
+      this.score++;
+    }
     setTimeout(() => {
       this.nextQuestion();
     }, 3000);
@@ -46,6 +49,7 @@ export class TriviaComponent {
   restart() {
     this.currentIndex = 0;
     this.quizFinished = false;
+    this.score = 0;
     this.loadQuestion();
   }
 }
