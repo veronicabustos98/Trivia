@@ -12,7 +12,7 @@ export class QuestionsService {
       options: ['Controlar la erosion del cauce', 'Reducir la velocidad del flujo', 'Medir y controlar el caudal'],
       correctAnswer: 'Medir y controlar el caudal'
     }, {
-      question: '¿Qué describe la eucación de Bernoulli?',
+      question: '¿Qué describe la ecuación de Bernoulli?',
       image: 'assets/paris.jpg',
       options: ['Relación entre caudal y area', 'Conservación de masa', 'De energía en un fluido'],
       correctAnswer: 'De energía en un fluido'
@@ -29,10 +29,10 @@ export class QuestionsService {
       correctAnswer: 'Vertedero'
     },
     {
-      question: '¿Cuál es una ventaja de los canales cerrados en coparación con los canales abiertos?',
+      question: '¿Cuál es una ventaja de los conductos presurizados comparados con conductos a presión atmosferica?',
       image: 'assets/paris.jpg',
-      options: ['Menor costro de consutrucción', 'Menor pérdida de agua por evaporación', 'Mejor resistencia a la erosión'],
-      correctAnswer: 'Menor pérdida de agua por evaporación'
+      options: ['Menor costo de mantenimiento', 'Menor perdida localizada', 'Mayor energia disponible'],
+      correctAnswer: 'Menor perdida localizada'
     },
        {
       question: '¿Cuál es una función importante de los revestimientos en canales abiertos?',
