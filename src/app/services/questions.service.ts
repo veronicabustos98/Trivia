@@ -8,12 +8,12 @@ export class QuestionsService {
   private questions: Question[] = [
     {
       question: '¿Cuál es la función de un vertedero?',
-      image: 'assets/Vertedero.jpeg',
+      image: 'assets/images/Vertedero.jpeg',
       options: ['Controlar la erosion del cauce', 'Reducir la velocidad del flujo', 'Medir y controlar el caudal'],
       correctAnswer: 'Medir y controlar el caudal'
     }, {
       question: '¿Qué describe la ecuación de Bernoulli?',
-      image: 'assets/Bernoulli.jpeg',
+      image: 'assets/images/Bernoulli.jpeg',
       options: ['Relación entre caudal y area', 'Conservación de masa', 'Conservación de energía'],
       correctAnswer: 'Conservación de energía'
     }, {
@@ -38,7 +38,7 @@ export class QuestionsService {
     },
     {
       question: 'El tubo venturi que mide una masa de fluido constante demuestra basandose en el principio de bernoulli y conservación de la masa que',
-      image: 'assets/Tubo venturi.jpeg',
+      image: 'assets/images/Tubo venturi.jpeg',
       options: ['Disminuye la seccion y disminuye el caudal', 'Disminuye la seccion entonces aumenta la energía cinética y baja da energía de presión', 'Disminuye la sección entonces disminuye la energía cinética y aumenta la energía de presión'],
       correctAnswer: 'Disminuye la seccion entonces aumenta la energía cinética y baja da energía de presión'
     },
