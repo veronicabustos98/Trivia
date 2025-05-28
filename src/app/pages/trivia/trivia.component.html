@@ -8,7 +8,7 @@
   
   <div 
     *ngIf="!quizFinished && currentQuestion" 
-    class="relative w-full max-w-2xl bg-white/90 backdrop-blur-sm p-5 rounded-2xl shadow-2xl animate-fade-in-up">
+    class="relative w-full max-w-2xl bg-white/90 backdrop-blur-sm p-2 rounded-2xl shadow-2xl animate-fade-in-up">
 
     <div class="absolute -top-6 -left-6 bg-violet-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold shadow-md">
       {{ currentIndex + 1 }}
@@ -43,7 +43,7 @@
 
   <div 
     *ngIf="quizFinished" 
-    class="w-full max-w-xl bg-white/100 backdrop-blur-sm p-5 rounded-2xl shadow-2xl text-center animate-fade-in-up space-y-6">
+    class="w-full max-w-xl bg-white/100 backdrop-blur-sm p-2 rounded-2xl shadow-2xl text-center animate-fade-in-up space-y-6">
     
     <h4 class="text-2xl font-extrabold text-gray-800 drop-shadow mb-4">¡Trivia finalizada!</h4>
      <p class="text-xl text-gray-700 font-medium mb-3">Tu puntaje: 
