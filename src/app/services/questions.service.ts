@@ -8,12 +8,12 @@ export class QuestionsService {
   private questions: Question[] = [
     {
       question: '¿Cuál es la función de un vertedero?',
-      image: 'assets/paris.jpg',
+      image: 'assets/Vertedero.jpeg',
       options: ['Controlar la erosion del cauce', 'Reducir la velocidad del flujo', 'Medir y controlar el caudal'],
       correctAnswer: 'Medir y controlar el caudal'
     }, {
       question: '¿Qué describe la ecuación de Bernoulli?',
-      image: 'assets/paris.jpg',
+      image: 'assets/Bernoulli.jpeg',
       options: ['Relación entre caudal y area', 'Conservación de masa', 'De energía en un fluido'],
       correctAnswer: 'De energía en un fluido'
     }, {
