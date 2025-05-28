@@ -14,31 +14,48 @@ export class QuestionsService {
     }, {
       question: '¿Qué describe la ecuación de Bernoulli?',
       image: 'assets/Bernoulli.jpeg',
-      options: ['Relación entre caudal y area', 'Conservación de masa', 'De energía en un fluido'],
-      correctAnswer: 'De energía en un fluido'
+      options: ['Relación entre caudal y area', 'Conservación de masa', 'Conservación de energía'],
+      correctAnswer: 'Conservación de energía'
     }, {
       question: '¿Qué es el golpe de ariete?',
-      image: 'assets/paris.jpg',
       options: ['Una pérdida por fricción', 'Un aumento brusco de presión', 'La formación de remolinos'],
       correctAnswer: 'Un aumento brusco de presión'
     },
     {
       question: '¿Qué tipo de estructura se utiliza para medir y regular el flujo de agua en un canal abierto?',
-      image: 'assets/paris.jpg',
       options: ['Vertedero', 'Compuerta', 'Presa'],
       correctAnswer: 'Vertedero'
     },
     {
       question: '¿Cuál es una ventaja de los conductos presurizados comparados con conductos a presión atmosferica?',
-      image: 'assets/paris.jpg',
       options: ['Menor costo de mantenimiento', 'Menor perdida localizada', 'Mayor energia disponible'],
-      correctAnswer: 'Menor perdida localizada'
+      correctAnswer: 'Mayor energia disponible'
     },
-       {
+    {
       question: '¿Cuál es una función importante de los revestimientos en canales abiertos?',
-      image: 'assets/paris.jpg',
       options: ['Aumentar la velocidad del flujo', 'Reducir la fricción y las pérdidas de agua', 'Mejorar la estabilidad estructural'],
       correctAnswer: 'Reducir la fricción y las pérdidas de agua'
+    },
+    {
+      question: 'El tubo venturi que mide una masa de fluido constante demuestra basandose en el principio de bernoulli y conservación de la masa que',
+      image: 'assets/Tubo venturi.jpeg',
+      options: ['Disminuye la seccion y disminuye el caudal', 'Disminuye la seccion entonces aumenta la energía cinética y baja da energía de presión', 'Disminuye la sección entonces disminuye la energía cinética y aumenta la energía de presión'],
+      correctAnswer: 'Disminuye la seccion entonces aumenta la energía cinética y baja da energía de presión'
+    },
+    {
+      question: '¿Qué caracteriza al flujo uniforme en canales abiertos?',
+      options: ['La pendiente varía a lo largo del canal', 'La velocidad y la profundidad permanecen constantes', 'El caudal varía con el tiempo','La presión es mayor que la atmosférica'],
+      correctAnswer: 'La velocidad y la profundidad permanecen constantes'
+    },
+    {
+      question: 'El número de Reynolds en hidráulica se utiliza para:',
+      options: ['Determinar la velocidad crítica del canal', 'Identificar el régimen de flujo', 'Medir la presión del fluido'],
+      correctAnswer: 'Identificar el régimen de flujo'
+    },
+    {
+      question: 'El flujo crítico en un canal abierto se produce cuando:',
+      options: ['El número de Froude es mayor que 1', 'El número de Froude es igual a 1', 'El número de Reynolds es menor que 2000','El caudal es constante y la pendiente es cero'],
+      correctAnswer: 'El número de Froude es igual a 1'
     }
   ];
 
