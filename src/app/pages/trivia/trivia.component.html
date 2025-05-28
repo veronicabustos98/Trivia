@@ -1,0 +1,59 @@
+<div class="area">
+  <ul class="circles">
+    <li></li><li></li><li></li><li></li><li></li>
+    <li></li><li></li><li></li><li></li><li></li>
+  </ul>
+</div>
+
+<div class="min-h-screen flex items-center justify-center px-4">
+  
+  <div 
+    *ngIf="!quizFinished && currentQuestion" 
+    class="relative w-full max-w-2xl bg-white/90 backdrop-blur-sm p-10 rounded-2xl shadow-2xl animate-fade-in-up">
+
+    <div class="absolute -top-6 -left-6 bg-violet-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold shadow-md">
+      {{ currentIndex + 1 }}
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-800 mb-6 text-center leading-snug tracking-wide">
+      {{ currentQuestion.question }}
+    </h2>
+
+    <img 
+      *ngIf="currentQuestion.image" 
+      [src]="currentQuestion.image" 
+      alt="Pregunta" 
+      class="w-full h-60 object-cover rounded-xl mb-8 shadow-md" />
+
+    <div class="grid gap-4">
+      <button
+        *ngFor="let option of currentQuestion.options"
+        (click)="selectAnswer(option)"
+        [disabled]="selectedAnswer"
+        [ngClass]="{
+          'bg-green-500 text-white': selectedAnswer && option === currentQuestion.correctAnswer,
+          'bg-red-500 text-white': selectedAnswer && option === selectedAnswer && option !== currentQuestion.correctAnswer,
+          'bg-white text-gray-700 border border-gray-300 hover:bg-gray-100': !selectedAnswer
+        }"
+        class="w-full py-3 px-4 rounded-xl font-semibold text-lg shadow transition-all duration-300 text-left"
+      >
+        {{ option }}
+      </button>
+    </div>
+  </div>
+
+  <div 
+    *ngIf="quizFinished" 
+    class="w-full max-w-xl bg-white/100 backdrop-blur-sm p-10 rounded-2xl shadow-2xl text-center animate-fade-in-up space-y-6">
+    
+    <h2 class="text-4xl font-extrabold text-gray-800 drop-shadow mb-4">¡Trivia finalizada!</h2>
+
+    <p-button 
+      label="Volver a empezar" 
+      icon="pi pi-refresh" 
+      (onClick)="restart()" 
+      severity="help" 
+      class="p-button-rounded shadow-lg hover:scale-105 transition-transform"
+    ></p-button>
+  </div>
+</div>
